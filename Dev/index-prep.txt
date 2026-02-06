@@ -1,0 +1,78 @@
+Done
+1.
+console.log("Start");
+
+    setTimeout(() => console.log("Timeout"), 0);
+
+Promise
+.resolve(console.log("Promise.resolve"))
+    .then(() => console.log("Promise"));
+
+new Promise((resolve,reject)=>{
+    console.log("New Promise")
+    resolve("new p")
+})
+    .then((data)=>console.log("New Promise",data))
+
+console.log("End");
+
+//Start
+//Promise.resolve
+//New Promise
+//End
+//Promise
+//New Promise, new p
+//Timeout
+
+-------------------------------------------------------------------------
+
+2. 
+Create a stopwatch hook which takes size and step from outside. 
+Write unit test for the same.
+After completion, how can we use same hook for timer instead of stopwatch
+
+one more coding exercise
+/* Create timer hook that can simulate a countdown timer. 
+The size or step of the timer should be customizable. 
+It will provide us time to display along with play and pause functionality */
+
+TO - DO
+
+Introduction (not experience and technology but challenges faced during whole career)
+Hoisting (Detailed like temporal dead zone etc)
+Diff btw CRA and vite (details)
+JS Event Cycle
+React Life Cycle
+How to mimic lifecycle in React18+
+Is React is unidirectional or bi-directional (Basically they wanted to know redux flow)
+Redux fundamentals
+Where redux store stays in our React app
+Diff btw Jest and Vitest
+How to access Child method from parent.
+Why hooks are better ways to write code.
+UseMemo and UseCallback
+
+
+
+
+
+
+Please study following topics for client round in deep:
+Hoisting (Detailed like temporal dead zone etc)
+Diff btw CRA and vite (details)
+JS Event Cycle in depth React Life Cycle
+How to mimic lifecycle in React18+
+Is React is unidirectional or bi-directional (Basically they wanted to know redux flow) Redux fundamentals UseImperativeHandler and useRef Virtualisation in React (depth) How to access Child method from parent.
+Why hooks are better ways to write code.
+UseMemo and UseCallback
+
+How Web Socket work with backend and frontend (this question based on my previous project).
+2. Scecrio based question on web Socket like if 1000 of request at a time how it will handle.
+2. How Microfrontend work, how it communicate with other Microfrontend.
+3. Axios vs Redux toolkit
+4. Other State management
+5. React Query / Zustand (based on my previous project)
+6. Coding Test - Todo App
+Axios vs RTK api(why use axios)
+Microfrontend - architecture and pros and cons vs monorepo
+ 
