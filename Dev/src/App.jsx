@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./index.css";
 function App() {
-  return <>React</>;
+  return <>React Dev</>;
 }
 
 export default App;
