@@ -9,6 +9,7 @@ import Virtualization from "./components/Virtualization";
 import Counter from "./components/CounterReduxCtx";
 import Todo from "./components/Todo";
 import RtkTodo from "./rtk/RtkTodo";
+import RQuery from "./rtk/RQuery";
 function App() {
   return (
     <>
@@ -23,7 +24,8 @@ function App() {
         {/* <Virtualization /> */}
         {/* <Counter/> */}
         {/* <Todo /> */}
-        <RtkTodo/>
+        {/* <RtkTodo/> */}
+        <RQuery />
       </div>
     </>
   );
