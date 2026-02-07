@@ -4,6 +4,7 @@ import Timer from "./components/Timer";
 import TimerWithHook from "./components/TimerWithHook";
 import DemoUseMemo from "./components/DemoUseMemo";
 import DemoUseCallback from "./components/DemoUseCallback";
+import InputRef from "./components/InputRef";
 function App() {
   return (
     <>
@@ -13,7 +14,9 @@ function App() {
         {/* <TimerWithHook />  */}
         {/* <DemoUseMemo /> */}
 
-        <DemoUseCallback />
+        {/* <DemoUseCallback /> */}
+        <InputRef/>
+
       </div>
     </>
   );
