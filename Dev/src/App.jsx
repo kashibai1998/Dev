@@ -8,6 +8,7 @@ import InputRef from "./components/InputRef";
 import Virtualization from "./components/Virtualization";
 import Counter from "./components/CounterReduxCtx";
 import Todo from "./components/Todo";
+import RtkTodo from "./rtk/RtkTodo";
 function App() {
   return (
     <>
@@ -21,7 +22,8 @@ function App() {
         {/* <InputRef/> */}
         {/* <Virtualization /> */}
         {/* <Counter/> */}
-        <Todo />
+        {/* <Todo /> */}
+        <RtkTodo/>
       </div>
     </>
   );
