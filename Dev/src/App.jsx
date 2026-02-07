@@ -5,6 +5,7 @@ import TimerWithHook from "./components/TimerWithHook";
 import DemoUseMemo from "./components/DemoUseMemo";
 import DemoUseCallback from "./components/DemoUseCallback";
 import InputRef from "./components/InputRef";
+import Virtualization from "./components/Virtualization";
 function App() {
   return (
     <>
@@ -15,8 +16,8 @@ function App() {
         {/* <DemoUseMemo /> */}
 
         {/* <DemoUseCallback /> */}
-        <InputRef/>
-
+        {/* <InputRef/> */}
+        <Virtualization />
       </div>
     </>
   );
