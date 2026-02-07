@@ -6,6 +6,7 @@ import DemoUseMemo from "./components/DemoUseMemo";
 import DemoUseCallback from "./components/DemoUseCallback";
 import InputRef from "./components/InputRef";
 import Virtualization from "./components/Virtualization";
+import Counter from "./components/Counter";
 function App() {
   return (
     <>
@@ -17,7 +18,8 @@ function App() {
 
         {/* <DemoUseCallback /> */}
         {/* <InputRef/> */}
-        <Virtualization />
+        {/* <Virtualization /> */}
+        <Counter/>
       </div>
     </>
   );
