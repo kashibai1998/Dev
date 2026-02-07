@@ -36,18 +36,96 @@ one more coding exercise
 The size or step of the timer should be customizable. 
 It will provide us time to display along with play and pause functionality */
 
+3.
+Diff btw Jest and Vitest
+Vitest vs Jest
+Diff btw CRA and vite (details)
+
+1️⃣ Jest (the OG)
+What it is
+
+Facebook/Meta’s test runner,Been around forever,Default for Create React App
+
+How it works
+
+Runs in Node, Uses Babel or ts-jest to transform code, Slower startup, but very stable
+
+Pros
+Extremely mature
+Huge ecosystem
+Tons of tutorials & StackOverflow answers
+Great for large, legacy projects
+
+Cons
+Slower (especially on big projects)
+Config can get heavy
+Not designed for Vite
+
+What it is
+
+Built by the Vite team
+Designed for ESM-first projects
+
+How it works
+Runs using Vite’s dev server
+Uses native ES modules
+Near-instant startup ⚡
+
+Pros
+
+🔥 Very fast
+Zero/low config
+Perfect match for Vite + React
+Jest-compatible API (describe, it, expect)
+
+Cons
+
+Newer (smaller ecosystem)
+Some Jest plugins don’t work
+A few Jest-only APIs missing
+⚡ Speed difference (this is the real reason people switch)
+Tool	Cold Start	Watch Mode
+Jest	❌ Slower	😐 OK
+Vitest	⚡ Instant	🚀 Super fast
+
+Vitest feels like hot reload for tests.
+
+🧪 API differences you actually feel
+Mocking
+Jest	Vitest
+jest.mock()	vi.mock()
+jest.fn()	vi.fn()
+jest.spyOn()	vi.spyOn()
+
+
+Use Vitest if:
+
+You’re using Vite
+You want fast tests
+You like modern tooling
+
+Use Jest if:
+
+You’re on Create React App
+You have an older codebase
+You rely on Jest-only plugins
+
+Jest = “Classic, stable, heavy”
+Vitest = “Modern, fast, Vite-native”
+
+
+
 TO - DO
 
 Introduction (not experience and technology but challenges faced during whole career)
 Hoisting (Detailed like temporal dead zone etc)
-Diff btw CRA and vite (details)
 JS Event Cycle
 React Life Cycle
 How to mimic lifecycle in React18+
 Is React is unidirectional or bi-directional (Basically they wanted to know redux flow)
 Redux fundamentals
 Where redux store stays in our React app
-Diff btw Jest and Vitest
+
 How to access Child method from parent.
 Why hooks are better ways to write code.
 UseMemo and UseCallback
@@ -66,8 +144,7 @@ Is React is unidirectional or bi-directional (Basically they wanted to know redu
 Why hooks are better ways to write code.
 UseMemo and UseCallback
 
-How Web Socket work with backend and frontend (this question based on my previous project).
-2. Scecrio based question on web Socket like if 1000 of request at a time how it will handle.
+
 2. How Microfrontend work, how it communicate with other Microfrontend.
 3. Axios vs Redux toolkit
 4. Other State management
@@ -75,4 +152,8 @@ How Web Socket work with backend and frontend (this question based on my previou
 6. Coding Test - Todo App
 Axios vs RTK api(why use axios)
 Microfrontend - architecture and pros and cons vs monorepo
+
+
+How Web Socket work with backend and frontend (this question based on my previous project).
+2. Scecrio based question on web Socket like if 1000 of request at a time how it will handle.
  
