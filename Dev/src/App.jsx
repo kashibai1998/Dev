@@ -15,6 +15,7 @@ import ErrorHandling from "./components/Error/ErrorHandling";
 import ErrorBoundaryClass from "./components/Error/ErrClass";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorFallback from "./components/Error/ErrorFallback";
+import ClickCounter from "./components/hoc/ClickCounter";
 function App() {
   return (
     <>
@@ -36,9 +37,10 @@ function App() {
           <ErrorHandling />
         </ErrorBoundaryClass> */}
 
-        <ErrorBoundary FallbackComponent={ErrorFallback}>
+        {/* <ErrorBoundary FallbackComponent={ErrorFallback}>
           <ErrorHandling />
-        </ErrorBoundary>
+        </ErrorBoundary> */}
+        <ClickCounter/>
       </div>
     </>
   );
