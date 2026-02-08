@@ -10,6 +10,11 @@ import Counter from "./components/CounterReduxCtx";
 import Todo from "./components/Todo";
 import RtkTodo from "./rtk/RtkTodo";
 import RQuery from "./rtk/RQuery";
+import CCounter from "./components/Counter";
+import ErrorHandling from "./components/Error/ErrorHandling";
+import ErrorBoundaryClass from "./components/Error/ErrClass";
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorFallback from "./components/Error/ErrorFallback";
 function App() {
   return (
     <>
@@ -25,7 +30,15 @@ function App() {
         {/* <Counter/> */}
         {/* <Todo /> */}
         {/* <RtkTodo/> */}
-        <RQuery />
+        {/* <RQuery /> */}
+        {/* <CCounter/> */}
+        {/* <ErrorBoundaryClass>
+          <ErrorHandling />
+        </ErrorBoundaryClass> */}
+
+        <ErrorBoundary FallbackComponent={ErrorFallback}>
+          <ErrorHandling />
+        </ErrorBoundary>
       </div>
     </>
   );
