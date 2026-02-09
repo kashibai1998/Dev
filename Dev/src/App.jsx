@@ -18,6 +18,7 @@ import ErrorFallback from "./components/Error/ErrorFallback";
 import ClickCounter from "./components/hoc/ClickCounter";
 import TimerImpl from "./comp/TimerImpl";
 import AutoLogout from "./comp/AutoLogout";
+import Traffic from "./comp/Traffic";
 function App() {
   return (
     <>
@@ -44,7 +45,8 @@ function App() {
         </ErrorBoundary> */}
         {/* <ClickCounter/> */}
         {/* <TimerImpl /> */}
-        <AutoLogout />
+        {/* <AutoLogout /> */}
+        <Traffic />
       </div>
     </>
   );
