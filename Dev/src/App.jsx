@@ -16,6 +16,7 @@ import ErrorBoundaryClass from "./components/Error/ErrClass";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorFallback from "./components/Error/ErrorFallback";
 import ClickCounter from "./components/hoc/ClickCounter";
+import TimerImpl from "./comp/TimerImpl";
 function App() {
   return (
     <>
@@ -40,7 +41,8 @@ function App() {
         {/* <ErrorBoundary FallbackComponent={ErrorFallback}>
           <ErrorHandling />
         </ErrorBoundary> */}
-        <ClickCounter/>
+        {/* <ClickCounter/> */}
+        <TimerImpl />
       </div>
     </>
   );
