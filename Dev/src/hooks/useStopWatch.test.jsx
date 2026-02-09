@@ -1,7 +1,7 @@
 import { renderHook, act } from "@testing-library/react";
 import useStopWatch from "../hooks/useStopWatch";
 
-jest.useFakeTimers()
+jest.useFakeTimers();
 
 describe("useStopWatch", () => {
   test("initial time", () => {
@@ -9,15 +9,15 @@ describe("useStopWatch", () => {
     expect(result.current.time).toBe("01 : 00");
   });
 
-  test("start timer",()=>{
+  test("start timer", () => {
     const { result } = renderHook(() => useStopWatch(50, 1, "up", 50));
-    act(()=>{
-      result.current.start()
-    })
-    act(()=>{
-      jest.advanceTimersByTime(1000)
-    })
+    act(() => {
+      result.current.start();
+    });
+    act(() => {
+      jest.advanceTimersByTime(1000);
+    });
 
     expect(result.current.time).toBe("00 : 51");
-  })
+  });
 });
