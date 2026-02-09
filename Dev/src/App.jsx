@@ -19,6 +19,7 @@ import ClickCounter from "./components/hoc/ClickCounter";
 import TimerImpl from "./comp/TimerImpl";
 import AutoLogout from "./comp/AutoLogout";
 import Traffic from "./comp/Traffic";
+import Debounce from "./comp/Debounce";
 function App() {
   return (
     <>
@@ -46,7 +47,8 @@ function App() {
         {/* <ClickCounter/> */}
         {/* <TimerImpl /> */}
         {/* <AutoLogout /> */}
-        <Traffic />
+        {/* <Traffic /> */}
+        <Debounce />
       </div>
     </>
   );
