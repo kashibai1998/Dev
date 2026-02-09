@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
-import {  useGetTodosQuery } from "./RTKQuery";
+import { useGetTodosQuery } from "./RTKQuery";
 const fetchTodos = async () => {
   const res = await axios.get(
     "https://jsonplaceholder.typicode.com/todos?_limit=5"

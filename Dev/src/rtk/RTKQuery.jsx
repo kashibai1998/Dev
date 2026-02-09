@@ -13,4 +13,4 @@ export const apiSlice = createApi({
 });
 
 export const { useGetTodosQuery } = apiSlice;
-export default apiSlice.reducerPath
+export default apiSlice.reducerPath;

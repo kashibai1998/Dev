@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 
 function calculateSquare(num) {
-  console.log("exp")
+  console.log("exp");
   let sum = 0;
   for (let i = 0; i < num; i++) {
     sum = sum + i;
@@ -13,15 +13,12 @@ export default function DemoUseMemo() {
   const [num, setNum] = useState(1);
   const [show, setShow] = useState(false);
 
-  const square = 
-  useMemo(() => 
-    {
+  const square = useMemo(() => {
     console.log("calc");
     return calculateSquare(num);
-  }
-  ,[num])
+  }, [num]);
   console.log("Rendering");
-  
+
   return (
     <div>
       <h2>Use Memo</h2>

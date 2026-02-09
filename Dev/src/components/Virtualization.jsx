@@ -1,11 +1,13 @@
-import {Virtuoso} from 'react-virtuoso'
+import { Virtuoso } from "react-virtuoso";
 export default function Virtualization() {
   return (
     <div>
       <h2>Virtualzation List</h2>
-      <Virtuoso 
-      style={{height:"200px"}}
-      itemContent={(index)=><div>Row - ${index}</div>} totalCount={100000} />
+      <Virtuoso
+        style={{ height: "200px" }}
+        itemContent={(index) => <div>Row - ${index}</div>}
+        totalCount={100000}
+      />
     </div>
   );
 }

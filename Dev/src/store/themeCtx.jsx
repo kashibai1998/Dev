@@ -11,7 +11,7 @@ const ThemeProvider = ({ children }) => {
     setTheme((t) => (t == "light" ? "dark" : "light"));
   };
   return (
-     <ThemeCtx.Provider value={{ theme, toggle }}>{children}</ThemeCtx.Provider>
+    <ThemeCtx.Provider value={{ theme, toggle }}>{children}</ThemeCtx.Provider>
   );
 };
 

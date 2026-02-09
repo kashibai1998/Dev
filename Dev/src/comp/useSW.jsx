@@ -8,7 +8,7 @@ export default function useSW(size, step, direction) {
 
     if (!running) return;
 
-    if(direction == "down" && time == 0) return;
+    if (direction == "down" && time == 0) return;
 
     if (running && time > 0) {
       timer = setInterval(() => {
@@ -17,22 +17,26 @@ export default function useSW(size, step, direction) {
     }
 
     return () => clearInterval(timer);
-  }, [time,running]);
+  }, [time, running]);
 
-  const format =(seconds)=>{
-    let min = Math.floor(seconds/60).toString().padStart(2,"0")
-    let sec = Math.floor(seconds%60).toString().padStart(2,"0")
+  const format = (seconds) => {
+    let min = Math.floor(seconds / 60)
+      .toString()
+      .padStart(2, "0");
+    let sec = Math.floor(seconds % 60)
+      .toString()
+      .padStart(2, "0");
 
-    return `${min} : ${sec}`
-  }
+    return `${min} : ${sec}`;
+  };
 
   return {
-    time:format(time),
-    start:()=>setRunning(true),
-    stop:()=>setRunning(false),
-    reset:()=>{
-        setTime(size)
-        setRunning(true)
-    }
+    time: format(time),
+    start: () => setRunning(true),
+    stop: () => setRunning(false),
+    reset: () => {
+      setTime(size);
+      setRunning(true);
+    },
   };
 }

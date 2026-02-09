@@ -4,9 +4,9 @@ import Button from "./Button";
 
 export default function DemoUseCallback() {
   const [count, setCount] = useState(0);
-  const inc = ()=>{
-    setCount(c=>c+1)
-  }
+  const inc = () => {
+    setCount((c) => c + 1);
+  };
   // useCallback(() => {
   //   setCount((c) => c + 1);
   // }, []);
@@ -19,7 +19,11 @@ export default function DemoUseCallback() {
     <div>
       <h2>use callback</h2>
       <p>{count}</p>
-      <input type="text" value={count} onChange={(e)=>setCount(e.target.value)} />
+      <input
+        type="text"
+        value={count}
+        onChange={(e) => setCount(e.target.value)}
+      />
       <Button label="INC" handler={inc} />
       <Button label="DEC" handler={dec} />
 

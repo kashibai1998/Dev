@@ -7,7 +7,7 @@ describe("useSW", () => {
     expect(result.current.time).toBe("00 : 10");
   });
 
-  test("start timer down", () => {
+  test("start timer down ", () => {
     const { result } = renderHook(() => useSW(10, 1, "down"));
     act(() => result.current.start());
     act(() => jest.advanceTimersByTime(1000));
