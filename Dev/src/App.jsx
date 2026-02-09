@@ -17,6 +17,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import ErrorFallback from "./components/Error/ErrorFallback";
 import ClickCounter from "./components/hoc/ClickCounter";
 import TimerImpl from "./comp/TimerImpl";
+import AutoLogout from "./comp/AutoLogout";
 function App() {
   return (
     <>
@@ -42,7 +43,8 @@ function App() {
           <ErrorHandling />
         </ErrorBoundary> */}
         {/* <ClickCounter/> */}
-        <TimerImpl />
+        {/* <TimerImpl /> */}
+        <AutoLogout />
       </div>
     </>
   );
