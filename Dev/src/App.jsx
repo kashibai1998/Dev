@@ -20,6 +20,7 @@ import TimerImpl from "./comp/TimerImpl";
 import AutoLogout from "./comp/AutoLogout";
 import Traffic from "./comp/Traffic";
 import Debounce from "./comp/Debounce";
+import ZuCounter from "./zustand/zuCounter";
 function App() {
   return (
     <>
@@ -48,7 +49,8 @@ function App() {
         {/* <TimerImpl /> */}
         {/* <AutoLogout /> */}
         {/* <Traffic /> */}
-        <Debounce />
+        {/* <Debounce /> */}
+        {/* <ZuCounter /> */}
       </div>
     </>
   );
