@@ -21,6 +21,7 @@ import AutoLogout from "./comp/AutoLogout";
 import Traffic from "./comp/Traffic";
 import Debounce from "./comp/Debounce";
 import ZuCounter from "./zustand/zuCounter";
+import ParentRef from "./comp/imperativeHandle";
 function App() {
   return (
     <>
@@ -36,7 +37,7 @@ function App() {
         {/* <Counter/> */}
         {/* <Todo /> */}
         {/* <RtkTodo/> */}
-        <RQuery />
+        {/* <RQuery /> */}
         {/* <CCounter/> */}
         {/* <ErrorBoundaryClass>
           <ErrorHandling />
@@ -51,6 +52,7 @@ function App() {
         {/* <Traffic /> */}
         {/* <Debounce /> */}
         {/* <ZuCounter /> */}
+        <ParentRef />
       </div>
     </>
   );
