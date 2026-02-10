@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import useDebounce from "./useDebounce";
+import useDidUpdate from "../hooks/useDidUpdate";
 
 const page = 10;
 
@@ -13,6 +14,10 @@ const Debounce = () => {
   useEffect(() => {
     fetchData();
   }, []);
+
+  useDidUpdate(() => {
+    console.log("runs only on update");
+  }, [curr]);
 
   const fetchData = async () => {
     const res = await fetch("https://dummyjson.com/products?limit=200");
@@ -41,7 +46,7 @@ const Debounce = () => {
     <div>
       <h2>Debounce</h2>
 
-      {[...Array(noOfPages)].keys().map((n) => (
+      {noOfPages && [...Array(noOfPages)].keys()?.map((n) => (
         <button key={n} onClick={() => setCurr(n)}>
           {n}
         </button>
