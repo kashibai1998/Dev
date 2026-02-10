@@ -23,6 +23,7 @@ import Debounce from "./comp/Debounce";
 import ZuCounter from "./zustand/zuCounter";
 import ParentRef from "./comp/imperativeHandle";
 import { TimerWithRef } from "./hooks/useTimer";
+import TodoImpl from "./hooks/TodoImpl";
 function App() {
   return (
     <>
@@ -54,7 +55,8 @@ function App() {
         {/* <Debounce /> */}
         {/* <ZuCounter /> */}
         {/* <ParentRef /> */}
-        <TimerWithRef />
+        {/* <TimerWithRef /> */}
+        <TodoImpl />
       </div>
     </>
   );
