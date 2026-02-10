@@ -22,6 +22,7 @@ import Traffic from "./comp/Traffic";
 import Debounce from "./comp/Debounce";
 import ZuCounter from "./zustand/zuCounter";
 import ParentRef from "./comp/imperativeHandle";
+import { TimerWithRef } from "./hooks/useTimer";
 function App() {
   return (
     <>
@@ -52,7 +53,8 @@ function App() {
         {/* <Traffic /> */}
         {/* <Debounce /> */}
         {/* <ZuCounter /> */}
-        <ParentRef />
+        {/* <ParentRef /> */}
+        <TimerWithRef />
       </div>
     </>
   );
