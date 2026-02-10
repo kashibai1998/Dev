@@ -50,7 +50,7 @@ function App() {
         {/* <AutoLogout /> */}
         {/* <Traffic /> */}
         {/* <Debounce /> */}
-        {/* <ZuCounter /> */}
+        <ZuCounter />
       </div>
     </>
   );
