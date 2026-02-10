@@ -15,7 +15,10 @@ export default function RQuery() {
   //   queryFn: fetchTodos,
   // });
 
-  const { data, isLoading, error } = useGetTodosQuery();
+  const { data, isLoading, error } = useGetTodosQuery("", {
+    // pollingInterval:10000
+    // refetchOnReconnect:()=<{}
+  });
 
   if (isLoading) return <div>Loading..</div>;
 

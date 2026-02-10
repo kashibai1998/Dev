@@ -36,7 +36,7 @@ function App() {
         {/* <Counter/> */}
         {/* <Todo /> */}
         {/* <RtkTodo/> */}
-        {/* <RQuery /> */}
+        <RQuery />
         {/* <CCounter/> */}
         {/* <ErrorBoundaryClass>
           <ErrorHandling />
@@ -50,7 +50,7 @@ function App() {
         {/* <AutoLogout /> */}
         {/* <Traffic /> */}
         {/* <Debounce /> */}
-        <ZuCounter />
+        {/* <ZuCounter /> */}
       </div>
     </>
   );
