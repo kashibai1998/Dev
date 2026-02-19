@@ -5,6 +5,9 @@ import CounterUseReducer from "./components/CounterUseReducer";
 import ErrorCls, { ErrorBoundaryFun } from "./components/Error";
 import HOCCounter from "./components/HOC";
 import MemoParent from "./components/Memo";
+import Pagination from "./components/Pagination";
+import Ref from "./components/Ref";
+import { ThemeCtxComp } from "./components/ThemeCtx";
 function App() {
   return (
     <>
@@ -34,6 +37,20 @@ function App() {
       <div>
         <h2>React Memo</h2>
         <MemoParent />
+      </div>
+      <div>
+        <h2>Pagination</h2>
+        <Pagination />
+      </div>
+
+      <div>
+        <h2>Ref</h2>
+        <Ref />
+      </div>
+
+      <div>
+        <h2>ThemeCtxComp</h2>
+        <ThemeCtxComp />
       </div>
     </>
   );
