@@ -13,6 +13,8 @@ import Todo from "./components/Todo";
 import TodoRQuery from "./components/TodoRQuery";
 import UseCounter from "./store/zustand/useCounter";
 import Traffic from "./components/Traffic";
+import TodoRTK from "./components/TodoRTK";
+import TodoStore from "./components/TodoStore";
 function App() {
   return (
     <>
@@ -67,8 +69,15 @@ function App() {
       </div>
       <div>
         <h2>TodoRQuery</h2>
-
         <TodoRQuery />
+      </div>
+      <div>
+        <h2>TodoRTQuery</h2>
+        <TodoRTK />
+      </div>
+      <div>
+        <h2>TodoRTK</h2>
+        <TodoStore />
       </div>
       <div>
         <h2>Zustand store counter</h2>
