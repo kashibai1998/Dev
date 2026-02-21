@@ -12,6 +12,7 @@ import Timer from "./components/Timer";
 import Todo from "./components/Todo";
 import TodoRQuery from "./components/TodoRQuery";
 import UseCounter from "./store/zustand/useCounter";
+import Traffic from "./components/Traffic";
 function App() {
   return (
     <>
@@ -71,7 +72,11 @@ function App() {
       </div>
       <div>
         <h2>Zustand store counter</h2>
-        <UseCounter/>
+        <UseCounter />
+      </div>
+      <div>
+        <h2>Traffic</h2>
+        <Traffic />
       </div>
     </>
   );
