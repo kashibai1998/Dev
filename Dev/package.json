@@ -13,6 +13,7 @@
     "test:coverage": "jest --coverage --watchAll=false"
   },
   "dependencies": {
+    "@originjs/vite-plugin-federation": "^1.4.1",
     "@reduxjs/toolkit": "^2.11.2",
     "@tanstack/react-query": "^5.90.20",
     "axios": "^1.13.4",
