@@ -8,6 +8,8 @@ import MemoParent from "./components/Memo";
 import Pagination from "./components/Pagination";
 import Ref from "./components/Ref";
 import { ThemeCtxComp } from "./components/ThemeCtx";
+import Timer from "./components/Timer";
+import Todo from "./components/Todo";
 function App() {
   return (
     <>
@@ -51,6 +53,14 @@ function App() {
       <div>
         <h2>ThemeCtxComp</h2>
         <ThemeCtxComp />
+      </div>
+      <div>
+        Timer
+        <Timer />
+      </div>
+      <div>
+        Todo
+        <Todo />
       </div>
     </>
   );
