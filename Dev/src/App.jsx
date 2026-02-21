@@ -10,6 +10,7 @@ import Ref from "./components/Ref";
 import { ThemeCtxComp } from "./components/ThemeCtx";
 import Timer from "./components/Timer";
 import Todo from "./components/Todo";
+import TodoRQuery from "./components/TodoRQuery";
 function App() {
   return (
     <>
@@ -55,12 +56,17 @@ function App() {
         <ThemeCtxComp />
       </div>
       <div>
-        Timer
+        <h2>Timer</h2>
         <Timer />
       </div>
       <div>
-        Todo
+        <h2>Todo</h2>
         <Todo />
+      </div>
+      <div>
+        <h2>TodoRQuery</h2>
+
+        <TodoRQuery />
       </div>
     </>
   );
