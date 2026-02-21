@@ -3,11 +3,11 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
 const TodoRQuery = () => {
   const qc = useQueryClient();
-  const { data, isLoading, error } = useQuery({
+  const { data } = useQuery({
     queryKey: ["todos"],
 
     queryFn: () => {
-      const data = fetch("https://jsonplaceholder.typicode.com/posts")
+      const data = fetch("https://jsonplaceholder.typicode.com/todos?_limit=1")
         .then((res) => res.json())
         .then((data) => data);
       return data;
@@ -15,20 +15,20 @@ const TodoRQuery = () => {
   });
 
   const addTodo = useMutation({
-    mutationFn: (newTodo) =>
-      fetch("https://jsonplaceholder.typicode.com/posts", {
+    mutationFn: async (newTodo) => {
+      const res = await fetch("https://jsonplaceholder.typicode.com/todos", {
         method: "POST",
         body: JSON.stringify({
-          title: "foo",
-          body: "bar",
-          userId: 1,
+          id:301,
+          title:"hello"
         }),
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-        },
       })
-        .then((response) => response.json())
-        .then((json) => json),
+      const data = await res.json()
+        // .then((response) => response.json())
+        // .then((json) => json);
+        console.log("new data",data)
+      return data;
+    },
     onSuccess: () => {
       console.log("data updated successfully", data, data.length);
       qc.invalidateQueries(["todos"]);

@@ -11,6 +11,7 @@ import { ThemeCtxComp } from "./components/ThemeCtx";
 import Timer from "./components/Timer";
 import Todo from "./components/Todo";
 import TodoRQuery from "./components/TodoRQuery";
+import UseCounter from "./store/zustand/useCounter";
 function App() {
   return (
     <>
@@ -67,6 +68,10 @@ function App() {
         <h2>TodoRQuery</h2>
 
         <TodoRQuery />
+      </div>
+      <div>
+        <h2>Zustand store counter</h2>
+        <UseCounter/>
       </div>
     </>
   );
